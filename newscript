@@ -12,7 +12,7 @@ local http_req = request or http.request
 function beeeeeeeee()
 	_G.DISCORDLIBBUTTONS = {}
 	local STUDIO = game["Run Service"]:IsStudio()
-	
+
 	local DiscordLib
 	if STUDIO then
 	    DiscordLib = require(script.DiscordLib)
@@ -21,9 +21,9 @@ function beeeeeeeee()
 	end
 	local win = DiscordLib:Window("Pastedrop Hub (10+ Games/100+ Scripts)") -- Change the TOP ui name.
 	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows ui name.
-	
+
 	local info = infochannel:Channel("Home") -- Change the first tab name.
-	local serv = win:Server("Home","rbxassetid://14188671658") -- Change the Windows ui name.
+	local serv = win:Server("Home","rbxassetid://87416078591687") -- Change the Windows ui name.
 	local Utility = serv:Channel("Utility") -- Change the first tab name.
 
 
@@ -39,7 +39,7 @@ function beeeeeeeee()
 		DiscordLib:Notification("Notification", "Website URL has been copied to clipboard.", "Okay!")
 		setclipboard("https://paste-drop.com/search")
 	end)
-	info:Button("Use our Pastedrop Hub roblox executor, the best free keyless executor!", function()
+	info:Button("Use our Pastedrop Hub roblox executor, the best free executor!", function()
 		DiscordLib:Notification("Notification", "Pastedrop Hub Executor URL has been copied to clipboard.", "Okay!")
 		setclipboard("https://paste-drophub.com/")
 	end)
@@ -1094,23 +1094,23 @@ function beeeeeeeee()
 	btns:Button("Beach Boy V.2", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v2.lua"))()
 	end)
-	
+
 	local Utility
 	if STUDIO then
 		Utility = require(script.SeperateLib)
 	else
 		Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/searchlib"))()
 	end
-	
+
 	for i,v in pairs (_G.DISCORDLIBBUTTONS) do
 		Utility:Button(v[1],v[2])
 	end
-	
+
 	local SearchTab = win:Server("Utility", "rbxassetid://12732045195", function()
 		Utility.Toggle()
 	end)
-	
-	
+
+
 end
 
 
@@ -1127,7 +1127,7 @@ end
 local function CheckKey(key)
 
     local currentDate = os.date("%Y-%m-%d")
-    local seed = currentDate .. "your secret phrase here" 
+    local seed = currentDate .. "your secret phrase here"
     local generatedKey = generateDailyKey(seed)
 
     return key == generatedKey
@@ -1136,9 +1136,9 @@ end
 
 
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/Library.lua"))()
-local win = DiscordLib:Window("PasteDrop Hub (10+ Games/100+ Scripts)") 
-local serv = win:Server("Home", "rbxassetid://14188671658") 
-local Kys = serv:Channel("Key System") 
+local win = DiscordLib:Window("PasteDrop Hub (10+ Games/100+ Scripts)")
+local serv = win:Server("Home", "rbxassetid://87416078591687")
+local Kys = serv:Channel("Key System")
 
 Kys:Textbox("Key Box", "Put the key here!", false, function(key)
     print("Input Key: " .. key)
