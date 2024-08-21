@@ -9,12 +9,19 @@ local CreatorId = game.CreatorId
 local http_req = request or http.request
 
 
-
 function beeeeeeeee()
-	local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/testingstuffs/main/uilib"))()
-	local win = DiscordLib:Window("PasteDrop Hub (10+ Games/100+ Scripts)") -- Change the TOP UI name.
-	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows UI name.
-
+	_G.DISCORDLIBBUTTONS = {}
+	local STUDIO = game["Run Service"]:IsStudio()
+	
+	local DiscordLib
+	if STUDIO then
+	    DiscordLib = require(script.DiscordLib)
+	else
+	    DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/uilib"))()
+	end
+	local win = DiscordLib:Window("Pastedrop Hub (10+ Games/100+ Scripts)") -- Change the TOP ui name.
+	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows ui name.
+	
 	local info = infochannel:Channel("Home") -- Change the first tab name.
 	local serv = win:Server("Home","rbxassetid://14188671658") -- Change the Windows ui name.
 	local Utility = serv:Channel("Utility") -- Change the first tab name.
@@ -22,19 +29,19 @@ function beeeeeeeee()
 
 	info:Button("Join our Discord Server", function()
 		DiscordLib:Notification("Notification", "Invite has been copied to clipboard.", "Okay!")
-		setclipboard("https://central-script.com/discord")
+		setclipboard("https://discord.com/invite/tzT6AEnf5K")
 	end)
-	info:Button("Check out official Central Hub website", function()
+	info:Button("Check out official Pastedrop Hub website", function()
 		DiscordLib:Notification("Notification", "Website URL has been copied to clipboard.", "Okay!")
-		setclipboard("https://central-script.com/")
+		setclipboard("https://paste-drophub.com/")
 	end)
 	info:Button("Want more Scripts? get more Scripts from here!", function()
 		DiscordLib:Notification("Notification", "Website URL has been copied to clipboard.", "Okay!")
 		setclipboard("https://paste-drop.com/search")
 	end)
-	info:Button("Use our Central roblox executor, the best free keyless executor!", function()
-		DiscordLib:Notification("Notification", "Central Executorl URL has been copied to clipboard.", "Okay!")
-		setclipboard("https://central-executor.com/")
+	info:Button("Use our Pastedrop Hub roblox executor, the best free keyless executor!", function()
+		DiscordLib:Notification("Notification", "Pastedrop Hub Executor URL has been copied to clipboard.", "Okay!")
+		setclipboard("https://paste-drophub.com/")
 	end)
 
 
@@ -1087,93 +1094,25 @@ function beeeeeeeee()
 	btns:Button("Beach Boy V.2", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v2.lua"))()
 	end)
-
-
-	local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/testingstuffs/main/searchlib"))()
-	Utility:Button("Infinite Yield", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-	end)
-	Utility:Button("Simple Spy (Spy Function / Better)", function()
-		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-	end)
-	Utility:Button("Dex V3", function()
-		local rng = Random.new()
-
-		local charset = {}
-		for i = 48,  57 do table.insert(charset, string.char(i)) end
-		for i = 65,  90 do table.insert(charset, string.char(i)) end
-		for i = 97, 122 do table.insert(charset, string.char(i)) end
-		local function RandomCharacters(length)
-			if length > 0 then
-				return RandomCharacters(length - 1) .. charset[rng:NextInteger(1, #charset)]
-			else
-				return ""
-			end
-		end
-
-		local Dex = game:GetObjects("rbxassetid://9553291002")[1]
-		Dex.Name = RandomCharacters(rng:NextInteger(5, 20))
-		Dex.Parent = game:GetService("CoreGui")
-
-		local function Load(Obj, Url)
-			local function GiveOwnGlobals(Func, Script)
-				local Fenv = {}
-				local RealFenv = {script = Script}
-				local FenvMt = {}
-				FenvMt.__index = function(a,b)
-					if RealFenv[b] == nil then
-						return getfenv()[b]
-					else
-						return RealFenv[b]
-					end
-				end
-				FenvMt.__newindex = function(a, b, c)
-					if RealFenv[b] == nil then
-						getfenv()[b] = c
-					else
-						RealFenv[b] = c
-					end
-				end
-				setmetatable(Fenv, FenvMt)
-				setfenv(Func, Fenv)
-				return Func
-			end
-
-			local function LoadScripts(Script)
-				if Script.ClassName == "Script" or Script.ClassName == "LocalScript" then
-					spawn(function()
-						GiveOwnGlobals(loadstring(Script.Source, "=" .. Script:GetFullName()), Script)()
-					end)
-				end
-				for i,v in pairs(Script:GetChildren()) do
-					LoadScripts(v)
-				end
-			end
-
-			LoadScripts(Obj)
-		end
-
-		Load(Dex)
-	end)
-	Utility:Button("Domain X", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
-	end)
-	Utility:Button("CMD-X", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-	end)
-	Utility:Button('Universal ESP', function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
-	end)
-	Utility:Button("FPS Boost", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/FPS_BOOST")();
-	end)
-
-
-
+	
+	local Utility
+	if STUDIO then
+		Utility = require(script.SeperateLib)
+	else
+		Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/searchlib"))()
+	end
+	
+	for i,v in pairs (_G.DISCORDLIBBUTTONS) do
+		Utility:Button(v[1],v[2])
+	end
+	
 	local SearchTab = win:Server("Utility", "rbxassetid://12732045195", function()
 		Utility.Toggle()
 	end)
+	
+	
 end
+
 
 local function generateDailyKey(seed)
     local chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
@@ -1196,7 +1135,7 @@ end
 
 
 
-local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NUTellaVING/Pastedrop/main/Library.lua"))()
+local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/Library.lua"))()
 local win = DiscordLib:Window("PasteDrop Hub (10+ Games/100+ Scripts)") 
 local serv = win:Server("Home", "rbxassetid://14188671658") 
 local Kys = serv:Channel("Key System") 
@@ -1212,10 +1151,14 @@ Kys:Textbox("Key Box", "Put the key here!", false, function(key)
     end
 end)
 
+Kys:Label("Hit ENTER once you've entered your key.")
+
+
 Kys:Button("Get Key Link!", function()
     DiscordLib:Notification("Notification", "Key Link has been copied to clipboard.", "Okay!")
     setclipboard("https://paste-drophub.com/getkey/")
 end)
 
 Kys:Label("paste-drophub.com/getkey/")
+
 
