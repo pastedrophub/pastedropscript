@@ -23,7 +23,7 @@ function beeeeeeeee()
 	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows ui name.
 
 	local info = infochannel:Channel("Home") -- Change the first tab name.
-	local serv = win:Server("Home","rbxassetid://107172888812380") -- Change the Windows ui name.
+	local serv = win:Server("Home","rbxassetid://99523336823193") -- Change the Windows ui name.
 	local Utility = serv:Channel("Utility") -- Change the first tab name.
 
 
@@ -1137,7 +1137,7 @@ end
 
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/Library.lua"))()
 local win = DiscordLib:Window("PasteDrop Hub (10+ Games/100+ Scripts)")
-local serv = win:Server("Home", "rbxassetid://107172888812380")
+local serv = win:Server("Home", "rbxassetid://99523336823193")
 local Kys = serv:Channel("Key System")
 
 Kys:Textbox("Key Box", "Put the key here!", false, function(key)
