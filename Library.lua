@@ -1033,7 +1033,7 @@ function DiscordLib:Window(text)
 
 	UserPanelUser.Name = "UserPanelUser"
 	UserPanelUser.Parent = UserPanelUserTag
-	UserPanelUser.BackgroundColor3 = Color3.fromRGB(139, 92, 246)
+	UserPanelUser.BackgroundColor3 = Color3.fromRGB(60,188,252)
 	UserPanelUser.BackgroundTransparency = 1.000
 	UserPanelUser.Font = Enum.Font.GothamSemibold
 	UserPanelUser.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1642,7 +1642,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(255,171,0)}
+				{BackgroundColor3 = Color3.fromRGB(60,188,252)}
 			):Play()
 		end)
 
@@ -1650,7 +1650,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(139, 92, 246)}
+				{BackgroundColor3 = Color3.fromRGB(60,188,252)}
 			):Play()
 		end)
 	end
@@ -2131,7 +2131,7 @@ function DiscordLib:Window(text)
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(139, 92, 246)
+				Button.BackgroundColor3 = Color3.fromRGB(60,188,252)
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
@@ -2147,7 +2147,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(139, 92, 246)}
+						{BackgroundColor3 = Color3.fromRGB(60,188,252)}
 					):Play()
 				end)
 
@@ -2165,7 +2165,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(139, 92, 246)}
+						{BackgroundColor3 = Color3.fromRGB(60,188,252)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
