@@ -1033,7 +1033,7 @@ function DiscordLib:Window(text)
 
 	UserPanelUser.Name = "UserPanelUser"
 	UserPanelUser.Parent = UserPanelUserTag
-	UserPanelUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UserPanelUser.BackgroundColor3 = Color3.fromRGB(139, 92, 246)
 	UserPanelUser.BackgroundTransparency = 1.000
 	UserPanelUser.Font = Enum.Font.GothamSemibold
 	UserPanelUser.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -2147,7 +2147,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(255,171,0)}
+						{BackgroundColor3 = Color3.fromRGB(139, 92, 246)}
 					):Play()
 				end)
 
