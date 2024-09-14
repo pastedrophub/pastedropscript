@@ -19,7 +19,7 @@ function beeeeeeeee()
 	else
 	    DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/uilib"))()
 	end
-	local win = DiscordLib:Window("Pastedrop Hub (10+ Games/100+ Scripts)") -- Change the TOP ui name.
+	local win = DiscordLib:Window("Paste-Drop Hub | 100+ Scripts)") -- Change the TOP ui name.
 	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows ui name.
 
 	local info = infochannel:Channel("Home") -- Change the first tab name.
@@ -49,6 +49,20 @@ function beeeeeeeee()
 	Utility:Button("Infinite Yield", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
+    Utility:Button("Chat Bypasser", function()
+    loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
+    end)
+    Utility:Button("Infinite Jump", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+if InfiniteJumpEnabled then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+end)
+Utility:Button("Position Finder GUI", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PgP9RdtG"))()
+end)
 	Utility:Button("Simple Spy (Spy Function / Better)", function()
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
@@ -304,30 +318,8 @@ function beeeeeeeee()
 	btns:Button("Pnada Hub", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/KarmaPanda/Roblox/main/astd-aio.lua'))()
 	end)
-	btns:Button("River Hub", function()
-		pcall(function()
-			loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lua"))()
-		end)
-	end)
-	btns:Button("Mini-Gui", function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/Cp8xbrrj"))()
-	end)
+	
 
-
-	local btns = serv:Channel("Arcane Odyssey", "")
-	btns:Label("No Key")
-	btns:Button("Muimi Hub", function()
-		local MuimiKey = game:HttpGet("https://pastebin.com/raw/k0WVv8rC")
-		writefile("key_muimi.txt", MuimiKey)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/bunnynwy/games/main/main.lua"))()
-	end)
-	btns:Button("Kidachi", function()
-		loadstring(game:HttpGet('https://kidachi.xyz/Odyssey', true))()
-	end)
-	btns:Button("Need Key")
-	btns:Button("Anys's Script", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyouranya/free/main/arcaneodyssey.lua'),true))()
-	end)
 
 	local btns = serv:Channel("Arsenal", "")
 	btns:Button("Owl HUB", function()
@@ -336,21 +328,11 @@ function beeeeeeeee()
 	btns:Button("V.G. HUB", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 	end)
-	btns:Button("Dark HUB", function()
-		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
-	end)
-	btns:Button("Bolts HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
-	end)
+    btns:Button("Bxnks Hub", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/tnSEWPBj"))()
+end)
 
-	local btns = serv:Channel("Anime Adventures", "")
-
-	btns:Button("Arpon Hub V2 - Auto Farm, Auto Play!", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
-	end)
-	btns:Button("Trap Hub - Auto Farm, Macro Record", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/TrapstarKSSKSKSKKS/Main/main/TrapHub.lua"))()
-	end)
+	
 
 	local btns = serv:Channel("Anime Fighter", "")
 
@@ -361,9 +343,6 @@ function beeeeeeeee()
 		repeat wait() until game:IsLoaded()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/afss"))()
 	end)
-	btns:Button("Yuto Hub (Require Key)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/afss"))()
-	end)
 	btns:Button("Hoho Hub (Require Key)", function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/obeseinsect/roblox/main/Games/Anime%20Fighters%20Sim/AFS.lua"))()
 	end)
@@ -371,30 +350,9 @@ function beeeeeeeee()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/pspboy08/dollhouse/main/AFSGUI.lua')))()
 	end)
 
-	local btns = serv:Channel("A 0ne Piece Game", "")
-
-	btns:Button("Noob HUB", function()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/5aq0H5rQ'),true))()
-	end)
-	btns:Button("Lazy HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/Scripts/main/"..game.PlaceId..".lua"))()
-	end)
-	btns:Button("Hyper HUB", function()
-		repeat wait() until game:IsLoaded()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Shisobad/new/main/script.lua"))()
-	end)
-	btns:Button("Astro HUB", function()
-		repeat wait() until game:IsLoaded()
-		loadstring(game:HttpGet'https://raw.githubusercontent.com/AstroScripter/ASTRO-HUB/main/Games/FreeGames/AstroLoader.lua')()
-	end)
-	btns:Button("Mukuro HUB", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
-	end)
 
 	local btns = serv:Channel("Arm Wrestle Simulator", "")
-	btns:Button("Sku Hub - Pet DUPE + Auto EVENTS Egg! (NO KEY!)", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/zicus-scripts/SkullHub/main/Loader.lua')))()
-	end)
+	
 	btns:Button("Muimi Hub - Auto Train & Auto Fight! (Key Required)", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/bunnynwy/games/main/main.lua"))()
 	end)
@@ -415,9 +373,6 @@ function beeeeeeeee()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 	end)
 
-	btns:Button("BedWarsMonkey GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
-	end)
 
 	btns:Button("Super GUI", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperGamingBros4/Roblox-HAX/main/Updated_Totally_Original_Script_Hub.Lua"))()
@@ -452,33 +407,14 @@ function beeeeeeeee()
 	btns:Button("LuckyMMB HUB", function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/VNSn4cxf'))()
 	end)
-	btns:Button("Histy HUB (Tween Auto Farm)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CheapeeWastaken/Lazium/main/Bss%20DC"))()
-	end)
-	btns:Button("Trainer's Script (Auto Feed)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/infinitylua/Luascripts/main/KJFsdEj8sXrja.lua"))()
-	end)
+
 	btns:Button("Kosmoc HUB", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/games/bss.lua"))()
 	end)
-	btns:Button("MHEE HUB", function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/KSpGSvQg",true))()
-	end)
-	btns:Button("Macro V2", function()
-		loadstring(game:HttpGet("https://www.macrov2-script.xyz/macrov2.lua"))()
-	end)
+	
 
 	local btns = serv:Channel("Blox Fruit", "")
-	btns:Button("Adminus Hub - Fruits Finder, Bring Fruits!", function()
-		repeat wait(5) until game:IsLoaded()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/AdminusGames/Blox_Fruits_Sniper/main/.lua'))()
-	end)
-	btns:Button("Zaque Hub - Fruits Snipe, Fragments Dupe! (Key Required)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
-	end)
-	btns:Button("Makima Hub - Auto Farm, Auto Quest & MORE! ", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Piwwy0909/MakimaRemake/main/Cumback.Makima'))()
-	end)
+	
 	btns:Button("HOHO Hub V3 - RACE V4, AUTO MIRAGE! (Key Required)", function()
 		_G.HohoVersion = "v3"
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
@@ -496,93 +432,26 @@ function beeeeeeeee()
 	btns:Button("Tawan Hub - Auto Skill + Dupe Fruits!", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/kill55547/TAWAN_HUB/main/TAWANxHUB_V2.lua.txt', true))()
 	end)
-	btns:Button("Makori Hub - Fast Auto Farm + Auto Bounty!", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MkoriCraft/NewScript/main/Comback!.lua",true))()
-	end)
+	
 	btns:Button("CFrame Hub - Blox Fruits NEWEST Scripts! (Key Required)", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CFrame3310/CFrameHub/main/BloxFruitV2.lua"))()
 	end)
 
 
-	local btns = serv:Channel("Bubble Gum", "")
-
-	btns:Button("Yuriware HUB", function()
-		getgenv().Themes = {
-			Main = {
-				Background = Color3.fromRGB(135, 199, 255),
-				Dashboard = Color3.fromRGB(109,184,255),
-				PageColor = Color3.fromRGB(109,184,255),
-				TextColor = Color3.fromRGB(255,255,255),
-				ScrollColor = Color3.fromRGB(25,25,25),
-				Elements = Color3.fromRGB(53, 156, 252)
-			},
-
-			Elements = {
-				Toggle = {
-					EnabledColor = Color3.fromRGB(0,143,255),
-					DisabledColor = Color3.fromRGB(99,174,255)
-				},
-				Dropdown = {
-					OptionColor = Color3.fromRGB(44, 156, 252),
-					SearchBar = Color3.fromRGB(44, 156, 252)
-				},
-				Slider = {
-					TrailBackground = Color3.fromRGB(88,184,255),
-					Trail = Color3.fromRGB(114,184,255)
-				},
-				TextBox = {
-					Box = Color3.fromRGB(109,184,255)
-				},
-				Keybind = {
-					KeyTextBackground = Color3.fromRGB(109,184,255)
-				}
-			}
-		}
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
-	end)
-
-	btns:Button("Akikazu HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/tzeyte/main/bubble%20gum"))()
-	end)
-	btns:Button("??? HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Luftwaffe-dotcom/a/main/Bubble%20Gum%20Sim",true))()
-	end)
-	btns:Button("Katix HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotARetard/script/main/Bubble%20Gum%20Simulator", true))()
-	end)
+	
 
 	local btns = serv:Channel("Clicker Simulator", "")
 
-	btns:Button("Adminus GUI", function()
-		loadstring(game:HttpGet"https://pastebin.com/raw/1BidAp9t")()
-	end)
-	btns:Button("Kederal/Script.gg", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kederal/script.gg/main/loader.lua"))()
-	end)
+	
 	btns:Button("Shiny Tool HUB", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/vJBhPCiL"))()
 	end)
-	btns:Button("LK HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LeoKholYt/roblox/main/clicker_simulator.lua",true))()
-	end)
-	btns:Button("Extreme HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
-	end)
-	btns:Button("Volatile GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/tbitw2549/TbitLoader/main/Hub"))()
-	end)
-	btns:Button("LaDamage GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
-	end)
+	
+
 
 	local btns = serv:Channel("Da Hood", "")
 
-	btns:Button("Unfair HUB", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();
-	end)
-	btns:Button("Bolts HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();
-	end)
+	
 	btns:Button("Faded", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))();
 	end)
@@ -590,44 +459,130 @@ function beeeeeeeee()
 	btns:Button("Aaryn GUI", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();
 	end)
-	btns:Button("Enclosed", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/dylannpro123/enclosed/main/enclosed'))()
-	end)
-	btns:Button("Noob HUB", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/kl'))()
-	end)
+	
 	btns:Button("Vault Paste", function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/gxC0siL2'))();
 	end)
-	btns:Button("Ray X", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))();
-	end)
-	btns:Button("ChariotsWare", function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))();
-	end)
+
 	btns:Button("Space X", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
 	end)
-	btns:Button("Valiant", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/cypherdh/Valiant/main/script"))()
-	end)
-	btns:Button("Destiny", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
-	end)
+	
+     btns:Button("RyzzChips Hub ", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ryzzchips/SubtoRyzzchips/main/SubtoRyzzchips"))()
+    end)
+
+     btns:Button("Rainbow Lock Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealXORA/Roblox-Scripts/main/Rainbow%20Sunshine%20Aimlock.lua", true))()
+    end)
+    
+    btns:Button("Q Tool", function()
+    getgenv().keytoclick = "F"
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = keytoclick
+tool.Activated:connect(function()
+    local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, keytoclick, false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+wait(0.3)
+end)
+
+btns:Button("Blazing Lock Hub", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/d75VfZK1"))()
+    end)
+
+
+
+btns:Button("Fake Macro", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
+    end)
+
+
+
+btns:Button("Aura X Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/k0nkx/Aura-x-skid-ez-remake-by-k0nkx/main/Sigma"))()
+    end)
+
+btns:Button("Blad Lock", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sdfesdfsedf/srgtergasdfs/main/wwwwwww", true))()
+    end)
+
+btns:Button("Frostbyte Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Frostbyte-leaked/main/Frostbyte%20leaked"))()
+    end)
+
+btns:Button("Anti Cheat Bypass", function()
+for _, key in next, getgc(true) do
+
+local function updateKey(instanceType)
+
+if pcall(function() return rawget(key, instanceType) end) and typeof(rawget(key, instanceType)) == 'table' and (rawget(key, instanceType))[1] == 'kick' then
+
+key.tvk = {
+
+'kick',
+
+function()
+
+return game.Workspace:WaitForChild('')
+
+end
+
+}
+
+end
+
+end
+
+updateKey('indexInstance')
+
+updateKey('namecallInstance')
+
+end
+    end)
+    
+    btns:Button("Anti Lock", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/btu1UyEq"))()
+    end)
+    
+    btns:Button("Right Click", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Leftclickballi'))()
+    end)
+    
+    btns:Button("Alysum Hub", function()
+getgenv().AlysumMobile = {
+
+enabled = true, -- // Global Switch
+
+ui = true, -- // Enable UI
+
+button_position = {104,4}, -- // Button Position
+
+legitness = "Blatant", -- // Super Legit (Closest Point), Semi Legit (Closest Part), Normal (Torso), Blatant (Head)
+
+prediction = "1", -- // Prediction version (1,2,3)
+
+notif = true, -- // Notifications
+
+highlight = true, -- // Highlight Target
+
+line = false, -- // Line to target
+
+checks = {true, true, false}, -- // Visible, Knocked, Friend
+
+assist = {false, 0.058}, -- // Enabled, Strength
+
+fov = {false,50} -- // Visible, Size
+
+}
+    end)
 
 
 	local btns = serv:Channel("Demonfall", "")
 	btns:Button("LeadMarker GUI", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/KronosFall.lua"))()
-	end)
-	btns:Button("FuriousFall GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/StepBroFurious/Script/main/FuriousFall.lua"))()
-	end)
-	btns:Button("Lazy HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/Scripts/main/"..game.PlaceId..".lua"))()
-	end)
-	btns:Button("Ghostfall", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/demonfall.lua', true))()
 	end)
 	btns:Button("Trigon Demonfall", function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/ArponAG/Scripts/main/TrigonDemonfallScript.lua"), true))()
@@ -638,42 +593,14 @@ function beeeeeeeee()
 	btns:Button("if you use script in scary game it not will be fun anymore", function()
 		DiscordLib:Notification("Notification", "Your Game Your Rule! (Click At Okay If You Agree)", "Okay!")
 	end)
-	btns:Button("Red/Green Gui (Bypass Anti Cheat)", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
-	end)
 	btns:Button("Darkrai-X", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
-	end)
-	btns:Button("Vynixius (All-Time Best Script)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
 	end)
 	btns:Button("plamen6789 (Entity Spawner)", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI"))()
 	end)
-	btns:Button("Ominous Vibes", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/ominousv"))()
-	end)
-	btns:Seperator()
-	btns:Button("Linoria Community", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
-	end)
-	btns:Button("Vynixius", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
-	end)
-	btns:Button("Unfair HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
-	end)
-	btns:Button("rblxscriptsnet", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/doors'),true))()
-	end)
 	btns:Button("Black GUI", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/8jBE4Nip"))()
-	end)
-	btns:Button("Dansploit", function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/6kfed0tP"))()
-	end)
-	btns:Button("D4rk Fcker", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/D4rk9690/My-scripts/main/d4rkfcker", true))()
 	end)
 	btns:Button("sashaaaaa#5351", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/cazQXL7t"))()
@@ -690,30 +617,7 @@ function beeeeeeeee()
 	btns:Button("Hydra Network", function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Robobo2022/script/main/Main.lua"), true))()
 	end)
-	btns:Button("xCLY & batusd", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
-	end)
-
-
-
-	local btns = serv:Channel("Fruit Warriors", "")
-
-	btns:Button("Ro-Flux", function()
-		_G.Key = "FREEKEY2023" -- key for now
-		pcall(function()
-			loadstring(game:HttpGet("https://roflux.net/scripts/games/" .. tostring(game.PlaceId) .. ".lua"))()
-		end)
-	end)
-	btns:Button("Purplecat Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/MyEdit/main/Hub"))()
-	end)
-	btns:Button("Enhanced Software", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/XO-3S-CL-VCK-jf-3HDM/Products/main/Fruit-Warriors.lua"))()
-	end)
-	btns:Button("Leadmarker", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/LeadMarker/opensrc/main/FruitWarriors/FruitWarriors.lua'))()
-	end)
-
+	
 
 
 
@@ -725,18 +629,6 @@ function beeeeeeeee()
 
 	btns:Button("Jack's HUB", function()
 		loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
-	end)
-
-	btns:Button("Soggy HUB", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SunkenMuch/Soggyware/main/Main',true))()
-	end)
-
-	btns:Button("Insanedude59's GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
-	end)
-
-	btns:Button("Pufferfish HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cospog/pufferfish/main/goalKick.lua"))()
 	end)
 
 	btns:Button("Extreme HUB", function()
@@ -751,21 +643,13 @@ function beeeeeeeee()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/GrandPieceOnlineGUI'),true))()
 	end)
 
-	btns:Button("Dolce Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/tree"))()
-	end)
 
-	btns:Button("Lunar Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/0xRinFin/GPO/main/Lunar%20Hub%20GPO%20FREE.lua"))()
-	end)
 
 	btns:Button("Arpon AG", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/gpo.lua', true))()
 	end)
 
-	btns:Button("CFA Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CFA-HUB/CFA-HUB/main/cfahubfree.lua"))()
-	end)
+	
 
 
 
@@ -773,13 +657,7 @@ function beeeeeeeee()
 	btns:Button("Mukuro Hub - BEST Auto Farm, Boss", function()
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 	end)
-	btns:Button("Blacktrap Hub - Fruits Sniper, Fruits Dupe ", function()
-		loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
-	end)
-	btns:Button("X7 Software - Auto Farm, Auto Boss! ", function()
-		local request = (syn and syn.request) or (http and http.request) or http_request
-		loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
-	end)
+	
 	btns:Button("NEW King Legacy Scripts HOHO Hub - AUTO Farm, Auto Dungeon!", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 	end)
@@ -790,9 +668,6 @@ function beeeeeeeee()
 	btns:Button("ZPU Hub", function()
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/xZPUHigh/zpuhub/main/madcity.lua")()
 	end)
-	btns:Button("TurkOyuncu99's GUI", function()
-		loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/811e25ec8cfcdaa9ae7026353288783c/raw/4b073a5c1a0a4sd"))()
-	end)
 	btns:Button("ZEPHYR X", function()
 		pcall(function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt", true))()
@@ -802,10 +677,6 @@ function beeeeeeeee()
 		DiscordLib:Notification("Notification", "Script is copied to the clipboard Paste it in ur autoexec folder and save the file enjoy master! (Click At Okay If You Agree)", "Okay!")
 		setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/MCARCH2.lua', true))()")
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/MCARCH2.lua', true))()
-	end)
-	btns:Button("Auto Rob By MadCityFarm", function()
-		getgenv().doclub = true -- set to true if u wanna rob the club (can be buggy)
-		loadstring(game:HttpGet('https://madcityfarm.brizzy9999.repl.co'))()
 	end)
 
 
@@ -823,9 +694,6 @@ function beeeeeeeee()
 
 	btns:Button("zxrby", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zxrby/okoko/main/Protected%20(5).lua",true))()
-	end)
-	btns:Button("Kelp HUB ", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
 	end)
 	btns:Button("Soggy Ware", function()
 		loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
@@ -850,33 +718,12 @@ function beeeeeeeee()
 	btns:Button("Scruot By RAFA (Old but support WRD API)", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/uBpUr2vU"))()
 	end)
-	btns:Button("System Exodus", function()
-		loadstring(game:HttpGet("https://system-exodus.com/scripts/MyRestaurant/MyRestaurant.lua", true))()
-	end)
-
-	btns:Button("Axure V3", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/myrestaurant"))()
-	end)
-
-	btns:Button("Need Key")
-
-	btns:Button("Project Lighting", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectLightningDev/Project-Lightning-Loader/main/Loader.Lua"))()
-	end)
 	btns:Button("Project WD", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
 	end)
 
 	local btns = serv:Channel("Murder Mystery 2", "") --at GameName you can change to any game name you want! can use Space Number anything you want!
 
-	btns:Button("Eclipse Hub (KEYLESS)", function() --at ScriptsName you can change to any script name you want! can use Space Number anything you want!
-		getgenv().mainKey = "nil"
-		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-	end)
-
-	btns:Button("Lunar Hub (KEYLESS)", function() --at ScriptsName you can change to any script name you want! can use Space Number anything you want!
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
-	end)
 
 	btns:Button("Kidachi V2 (KEYLESS)", function() --at ScriptsName you can change to any script name you want! can use Space Number anything you want!
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KidichiHB/Kidachi/main/Scripts/MM2_V2"))()
@@ -886,44 +733,24 @@ function beeeeeeeee()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheEmptynessProject/EmptynessProject/main/index.lua"))()
 	end)
 
+
+
+
 	local btns = serv:Channel("Pet Simulator X", "")
 
-	btns:Button("Milk Up (All-Time Best)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Flxry/Main/MilkyHub/Pet%20Simulator%20X"))()
-	end)
-	btns:Button("Milk Up (Beta)", function()
-		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
-	end)
-	btns:Button("Huge Game (Lootbag Hack)", function()
-		loadstring(game:HttpGet("https://hugegames.io/psx"))()
-	end)
+
 	btns:Button("Pet Changer (VISUAL)", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ReturnString9999/P-S-X-main-lulz/main/Changer/.lua"))()
-	end)
-	btns:Button("Cipex (Booth Snipe)", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/cipex-rbx/cipex/main/loader.lua"))()
 	end)
 	btns:Label("Need Key")
 	btns:Button("Project WD", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
 	end)
-	btns:Button("Blacktrap (Instant Egg)", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/S4nZz/bt_project/main/Games/BlacktrapScript.txt'))()
-	end)
-	btns:Button("Catalyst (Auto Golden/Rainbow)", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
-	end)
 	btns:Button("Cloud Hub (Good)", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripters/CloudHub/main/hub"))()
 	end)
 
-	local btns = serv:Channel("Project Mugetsu", "")
-	btns:Button("Valynium Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/XO-3S-CL-VCK-jf-3HDM/Products/main/Project-Mugetsu.lua"))()
-	end)
-	btns:Button("PM Smooth Ware", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Alrbuddy/ohmydays/main/Purmom'))()
-	end)
+	
 
 
 	local btns = serv:Channel("Project Slayers", "")
@@ -940,65 +767,19 @@ function beeeeeeeee()
 	btns:Button("V.G Hub - Auto Farm & Kill Aura! ", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 	end)
-	btns:Button("Sylveon Hub (Mobile) – Boss Farm + Dungeon Farm", function()
-		local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"
-		repeat wait() until game:IsLoaded()
-		loadstring(game:HttpGet(LoaderUrl))()
-	end)
-	btns:Button("Sylveon Hub (PC) – Auto Farm & Kill Aura!", function()
-		local LoaderUrl = "https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/NewLoader.lua"
-		repeat wait() until game:IsLoaded()
-		loadstring(game:HttpGet(LoaderUrl))()
-	end)
+
 
 
 	local btns = serv:Channel("Race Clicker", "")
-	btns:Button("Ultra HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
-	end)
-	btns:Button("Red Gui", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow"))()
-	end)
 	btns:Button("Androminome", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/boomcacas/androminome/main/hub"))()
 	end)
-	btns:Button("X Hub", function()
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/zorluaa/xhubrace/main/xhub.nigga.s1"), true))()
-	end)
+
+
+
 
 	local btns = serv:Channel("Rainbow Friend", "")
-	btns:Button("Frightened Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/FrightenedHub/main/Loader.lua", true))()
-	end)
-	btns:Button("Toraisme's Scripts", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0rainbow"))()
-	end)
-	btns:Button("ESP", function()
-		local itemsOfInterest = Instance.new("Model", workspace)
-		itemsOfInterest.Name = "Items of Interest"
-
-		for i, v in pairs (workspace:GetChildren()) do
-			if v.Name == "Battery" or (v.Name:find("^Block") and v:IsA("Model")) or (v.Name:find("^Food") and v:IsA("Model")) or (v.Name:find("^Fuse") and v:IsA("Model")) then
-				v.Parent = itemsOfInterest
-			end
-		end
-
-		for i, v in pairs (workspace.Monsters:GetChildren()) do
-			local highlight = Instance.new("Highlight")
-			highlight.Parent = v
-			highlight.Adornee = v
-			highlight.FillColor = Color3.new(255, 0, 0)
-			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-			highlight.FillTransparency = 0.5
-		end
-
-		local highlight = Instance.new("Highlight")
-		highlight.Parent = itemsOfInterest
-		highlight.Adornee = itemsOfInterest
-		highlight.FillColor = Color3.new(0, 255, 0)
-		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		highlight.FillTransparency = 0.5
-	end)
+	
 	btns:Button("Borkware", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
 	end)
@@ -1006,44 +787,25 @@ function beeeeeeeee()
 
 
 	local btns = serv:Channel("Shindo Life", "")
-	btns:Button("V.G. HUB", function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-	end)
+	
 	btns:Button("Spy HUB", function()
 		loadstring(game:HttpGet(("https://pastebin.com/raw/mVTanGiF")))()
 	end)
 	btns:Button("Reav HUB", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2_autofarm/main/main.lua", true))()
 	end)
-	btns:Button("Bruh HUB", function()
-		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
-	end)
-	btns:Button("Snow HUB", function()
-		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
-	end)
-	btns:Button("Keybrew HUB", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
-	end)
+
 	btns:Button("Premier Lite", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
 	end)
-	btns:Button("Kesh HUB", function()
-		loadstring(game:HttpGet("https://bend-over.space/.lua"))()
-	end)
+	
 	btns:Button("Vellerius", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/Revamps/main/SpyHub.lua"))()
 	end)
 	btns:Button("Don Hub", function()
 		repeat pcall(function() source = game:HttpGet('https://gist.github.com/AzureArts/99f5b5cfd49def461216e4d4689757ce/raw',true) end) if source == nil then wait(0.5) warn('HTTP Error, retrying') end until source ~= nil loadstring(source)()
 	end)
-	btns:Button("Phantom Hub", function()
-		local link, response = pcall(game.HttpGet, game, string.reverse'aul.niaM/ihcati/113vbuhretsam/lolytsed/moc.tnetnocresubuhtig.war//:sptth', true)
-		if not link then return error("Failed to access raw") end
-		local loads, err = coroutine.create(loadstring(response, '@desty#1821', '@GramxPersons#1111'))
-		if not loads then return error('Failed to load response') end
-		coroutine.resume(loads)
-	end)
-
+	
 
 	local btns = serv:Channel("The Strongest Battleground", "")
 	btns:Button("Nicuse'S Scripts", function()
@@ -1055,9 +817,68 @@ function beeeeeeeee()
 	btns:Button("XTrey10x Hub", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/saitama"))()
 	end)
+    btns:Button("Blast Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Strongest-Battleground/main/Protected_5975714591017965.txt"))()
+	end)
 
 
+    local btns = serv:Channel("Slap Battles", "")
+    btns:Button("Bxnks Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4qRTuvrK"))()
+    end)
+    btns:Button("Giang Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua'))()
+    end)
 
+
+    local btns = serv:Channel("Meta Lock", "")
+    btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Meta-Lock/main/Protected_4682559165984511.txt"))()
+    end)
+
+local btns = serv:Channel("The Classic Soccer", "")
+btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/The-Classic-Soccer/main/Soccer"))()
+    end)
+
+local btns = serv:Channel("Untitled Tag Game", "")
+btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Untitled-Tag/main/UntitledTag"))()
+    end)
+    local btns = serv:Channel("BrookHaven", "")
+    btns:Button("Juanko Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Juanko-Scripts/Roblox-scripts/main/Mini%20Pack%20Animation%20Fe"))()
+    end)
+    btns:Button("JulHub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    end)
+    btns:Button("Brookhaven PP", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+    end)
+    local btns = serv:Channel("Murders VS Sheriffs", "")
+    btns:Button("Tbao Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff"))()
+    end)
+    local btns = serv:Channel("Physics Tycoon", "")
+    btns:Button("Physics Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rayumananiga/rayuma_hub/main/PHYSICS_POWER_TYCOON"))()
+    end)
+    local btns = serv:Channel("Hard Time", "")
+    btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Hard-Time-New/main/Protected_1384669773919682.txt"))()
+    end)
+    local btns = serv:Channel("Sheep Tycoon Simulator", "")
+    btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Sheep-Tycoon/main/Protected_3252526120156844%20(3).txt"))()
+    end)
+    local btns = serv:Channel("Monkey Arena", "")
+    btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Monkey-Arena-new/main/Arena.txt"))()
+    end)
+    local btns = serv:Channel("Sigma Simulator", "")
+btns:Button("Blast Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Sigma-Simulator/main/Protected_4926367353710821.txt"))()
+    end)
 	local btns = serv:Channel("YBA", "")
 	btns:Button("Midnight Hub", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheFarowHywolf/YBA-Midnight-script/master/YBA.lua"))()
@@ -1160,5 +981,3 @@ Kys:Button("Get Key Link!", function()
 end)
 
 Kys:Label("paste-drophub.com/getkey/")
-
-
