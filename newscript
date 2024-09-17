@@ -20,7 +20,7 @@ function beeeeeeeee()
 	    DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/uilib"))()
 	end
 	local win = DiscordLib:Window("Paste-Drop Hub | 100+ Scripts") -- Change the TOP ui name.
-	local infochannel = win:Server("Information","rbxassetid://14220986185") -- Change the Windows ui name.
+	local infochannel = win:Server("Information","rbxassetid://85267816248488") -- Change the Windows ui name.
 
 	local info = infochannel:Channel("Home") -- Change the first tab name.
 	local serv = win:Server("Home","rbxassetid://99523336823193") -- Change the Windows ui name.
