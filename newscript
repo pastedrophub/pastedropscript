@@ -958,7 +958,7 @@ end
 
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/pastedrophub/pastedropscript/main/Library.lua"))()
 local win = DiscordLib:Window("Paste-Drop Hub | 100+ Scripts") -- Change the TOP ui name.
-local serv = win:Server("Home", "rbxassetid://99523336823193")
+local serv = win:Server("Home", "rbxassetid://105050496452306")
 local Kys = serv:Channel("Key System")
 
 Kys:Textbox("Key Box", "Put the key here!", false, function(key)
