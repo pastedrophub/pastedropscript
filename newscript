@@ -927,7 +927,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Robloxblast/Sigma-Sim
 		Utility:Button(v[1],v[2])
 	end
 
-	local SearchTab = win:Server("Utility", "rbxassetid://12732045195", function()
+	local SearchTab = win:Server("Utility", "rbxassetid://105050496452306", function()
 		Utility.Toggle()
 	end)
 
